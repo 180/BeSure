@@ -91,11 +91,8 @@ class ViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "Nie", style: UIAlertActionStyle.Default,handler: nil))
             
             alertController.addAction(UIAlertAction(title: "Tak", style: .Default, handler:{(alert: UIAlertAction!) in
-                
-                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("TableViewController") as! TableViewController
-                UIApplication.topViewController()!.navigationController?.pushViewController(nextViewController, animated: true)
-            }))
+                UIApplication.topViewController()!.navigationController?.popToRootViewControllerAnimated(true)            }))
+            
             
             
             self.presentViewController(alertController, animated: true, completion: nil)

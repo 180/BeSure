@@ -50,7 +50,7 @@ class TableViewController: UITableViewController {
         let hour = components.hour
         let minutes = components.minute
         
-        cell.timeLabel.text = "Dziś \(hour):\(minutes-indexPath.row*2)"
+        cell.timeLabel.text = "Dziś \(hour):\(minutes)"
         
         cell.statusIconImageView.hidden = (NSInteger(indexPath.row/2) == 0 ) ? true : false
         
