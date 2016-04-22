@@ -228,8 +228,8 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31j-ht-9R9">
-                                <rect key="frame" x="36" y="112" width="268" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31j-ht-9R9">
+                                <rect key="frame" x="36" y="48" width="268" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4Wd-iW-qnH"/>
                                 </constraints>
@@ -239,20 +239,20 @@
                                     <outlet property="delegate" destination="SJj-We-fwN" id="ZZr-iL-25g"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuK-b1-8B7">
-                                <rect key="frame" x="20" y="84" width="52" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuK-b1-8B7">
+                                <rect key="frame" x="20" y="20" width="52" height="24"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Launch on:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0D-Bu-Mdf">
-                                <rect key="frame" x="20" y="150" width="86" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch on:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0D-Bu-Mdf">
+                                <rect key="frame" x="20" y="86" width="86" height="24"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2c-lZ-7CK">
-                                <rect key="frame" x="30" y="182" width="87" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2c-lZ-7CK">
+                                <rect key="frame" x="30" y="118" width="87" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="z9C-Ip-bP5"/>
                                 </constraints>
@@ -267,8 +267,8 @@
                                     <action selector="btnManuallyTapped:" destination="SJj-We-fwN" eventType="touchUpInside" id="fyk-dW-KA9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj2-4B-5up">
-                                <rect key="frame" x="116" y="182" width="87" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj2-4B-5up">
+                                <rect key="frame" x="117" y="118" width="87" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Kdk-UT-htL"/>
                                 </constraints>
@@ -283,8 +283,8 @@
                                     <action selector="btnTimeTapped:" destination="SJj-We-fwN" eventType="touchUpInside" id="qFw-dI-ggj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2df-Qy-dTm">
-                                <rect key="frame" x="203" y="182" width="87" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2df-Qy-dTm">
+                                <rect key="frame" x="204" y="118" width="86" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="nWw-EI-kqZ"/>
                                 </constraints>
@@ -299,23 +299,23 @@
                                     <action selector="btnLocationTapped:" destination="SJj-We-fwN" eventType="touchUpInside" id="dav-0Y-OLH"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hoM-7P-udE">
-                                <rect key="frame" x="10" y="225" width="300" height="335"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoM-7P-udE">
+                                <rect key="frame" x="10" y="161" width="300" height="335"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Remind at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjf-wg-dmf">
-                                        <rect key="frame" x="8" y="8" width="222" height="24"/>
+                                        <rect key="frame" x="8" y="8" width="84" height="24"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="8:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuQ-xw-NEa">
-                                        <rect key="frame" x="238" y="8" width="54" height="21"/>
+                                        <rect key="frame" x="100" y="8" width="192" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Repeat every:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ih-rE-Jwk">
-                                        <rect key="frame" x="50" y="49" width="112" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat every:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ih-rE-Jwk">
+                                        <rect key="frame" x="50" y="49" width="106" height="24"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -354,8 +354,8 @@
                                             <action selector="datePickerChanged:" destination="SJj-We-fwN" eventType="valueChanged" id="Tfl-Pf-n5i"/>
                                         </connections>
                                     </datePicker>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEg-YZ-g4Q">
-                                        <rect key="frame" x="238" y="49" width="29" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEg-YZ-g4Q">
+                                        <rect key="frame" x="231" y="46" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="2B7-nm-e1A"/>
                                             <constraint firstAttribute="height" constant="30" id="EwF-W4-PfJ"/>
@@ -370,8 +370,8 @@
                                             <action selector="buttonHoursTapped:" destination="SJj-We-fwN" eventType="touchUpInside" id="jzS-eZ-2KD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAh-T3-2ml">
-                                        <rect key="frame" x="275" y="46" width="29" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAh-T3-2ml">
+                                        <rect key="frame" x="261" y="46" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="daB-o3-UXI"/>
                                             <constraint firstAttribute="height" constant="30" id="gXe-K1-a10"/>
@@ -397,8 +397,8 @@
                                             <outlet property="delegate" destination="SJj-We-fwN" id="iGM-QP-lCC"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPQ-to-Trz">
-                                        <rect key="frame" x="201" y="46" width="29" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPQ-to-Trz">
+                                        <rect key="frame" x="201" y="46" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Su8-uQ-tyA"/>
                                             <constraint firstAttribute="width" constant="30" id="w2q-m3-6Rg"/>
@@ -452,16 +452,17 @@
                                     <constraint firstItem="hEg-YZ-g4Q" firstAttribute="top" secondItem="yLt-ph-t9T" secondAttribute="bottom" constant="12" id="yCb-1s-xXd"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dws-AP-z0N">
-                                <rect key="frame" x="0.0" y="523" width="320" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dws-AP-z0N">
+                                <rect key="frame" x="0.0" y="460" width="320" height="44"/>
                                 <color key="backgroundColor" red="0.2784313725" green="0.77647058820000003" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="w75-v9-Tg5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="CREATE"/>
+                                <state key="normal" title="ADD STEPS"/>
                                 <connections>
                                     <action selector="createButtonTapped:" destination="SJj-We-fwN" eventType="touchUpInside" id="88y-NE-I2w"/>
+                                    <segue destination="5Ya-oO-Ltx" kind="push" id="q5V-va-w62"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -510,6 +511,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jnv-O8-XsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="737" y="-750"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fcC-y3-C1d">
+            <objects>
+                <viewController id="5Ya-oO-Ltx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H8G-Lb-NEL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Twl-Y7-7ow"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hOr-J2-Bdl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8s6-nP-N6N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HeB-Wd-ZQ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1227" y="-750"/>
         </scene>
     </scenes>
     <resources>
