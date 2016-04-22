@@ -74,15 +74,37 @@ extension AppDelegate: KTKBeaconManagerDelegate {
     
     func beaconManager(manager: KTKBeaconManager, didEnterRegion region: KTKBeaconRegion) {
         print("Enter region \(region)")
-        let importAlert: UIAlertController = UIAlertController(title: "Beacons", message: String(format:"%@ in", region.identifier), preferredStyle: UIAlertControllerStyle.Alert)
-        importAlert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler:nil))
+        
+        Notifications.display("Witaj w domu:\n-Nakarm kota\n-Nakarm rybki")
+        
+        let importAlert: UIAlertController = UIAlertController(title: "Witaj w domu!", message:"nakarm kota", preferredStyle: UIAlertControllerStyle.Alert)
+        importAlert.addAction(UIAlertAction(title: "Nie", style: .Destructive, handler: nil))
+        
+        importAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler:{(alert: UIAlertAction!) in
+            print("papa")
+            let listVC = TableViewController()
+            UIApplication.topViewController()?.presentViewController(listVC, animated: true, completion: nil)
+                   }))
+        
         self.window?.rootViewController?.presentViewController(importAlert, animated: true, completion: nil)
     }
     
     func beaconManager(manager: KTKBeaconManager, didExitRegion region: KTKBeaconRegion) {
         print("Exit region \(region)")
-        let importAlert: UIAlertController = UIAlertController(title: "Beacons", message: String(format:"%@ out", region.identifier), preferredStyle: UIAlertControllerStyle.Alert)
-        importAlert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler:nil))
+        
+        Notifications.display("Zanim wyjdziesz z domu:\n-Wyłącz żelazko\n-Nakarm kota")
+        
+        
+        let importAlert: UIAlertController = UIAlertController(title: "Zanim wyjdziesz z domu", message:" Wyłącz żelazko \n Nakarm kota", preferredStyle: UIAlertControllerStyle.Alert)
+        importAlert.addAction(UIAlertAction(title: "Nie chce", style: .Destructive, handler: nil))
+        
+        importAlert.addAction(UIAlertAction(title: "Ok, pokaż listę", style: .Default, handler:{(alert: UIAlertAction!) in
+            print("papa")
+            let listVC = TableViewController()
+        
+            UIApplication.topViewController()?.presentViewController(listVC, animated: true, completion: nil)
+        }))
+        
         self.window?.rootViewController?.presentViewController(importAlert, animated: true, completion: nil)
     }
     
