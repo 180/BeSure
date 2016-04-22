@@ -50,13 +50,13 @@ class ViewController: UIViewController {
     }
     
     // MARK:- Selected Cell IndexPath
-
+    
     func getIndexPathForSelectedCell() -> NSIndexPath? {
         
         var indexPath:NSIndexPath?
         
         if collectionView.indexPathsForSelectedItems()!.count > 0 {
-            indexPath = collectionView.indexPathsForSelectedItems()![0] 
+            indexPath = collectionView.indexPathsForSelectedItems()![0]
         }
         return indexPath
     }
@@ -67,12 +67,11 @@ class ViewController: UIViewController {
         
         let cell = collectionView.cellForItemAtIndexPath(indexPath) as! FruitCell
         
+        
         if flag {
-            cell.contentView.backgroundColor = UIColor.greenColor()
             cell.tickImageView.hidden = false
         } else {
-            cell.contentView.backgroundColor = nil
-             cell.tickImageView.hidden = true
+            cell.tickImageView.hidden = true
         }
     }
     
@@ -136,7 +135,7 @@ extension ViewController : UICollectionViewDataSource {
         let name = fruit.name!
         
         cell.imageView.image = UIImage(named: name.lowercaseString)
-            
+        
         return cell
     }
     
@@ -158,7 +157,7 @@ extension ViewController : UICollectionViewDelegate {
         highlightCell(indexPath, flag: true)
     }
     
-     func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
         highlightCell(indexPath, flag: false)
     }
 }

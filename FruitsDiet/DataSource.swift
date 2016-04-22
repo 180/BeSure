@@ -33,7 +33,7 @@ class DataSource {
     // MARK:- Populate Data from plist
     
     func populateData() {
-        if let path = NSBundle.mainBundle().pathForResource("fruits", ofType: "plist") {
+        if let path = NSBundle.mainBundle().pathForResource("items", ofType: "plist") {
             if let dictArray = NSArray(contentsOfFile: path) {
                 for item in dictArray {
                     if let dict = item as? NSDictionary {

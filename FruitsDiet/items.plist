@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Feedcat</string>
+		<key>group</key>
+		<string>Morning</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Pill1</string>
+		<key>group</key>
+		<string>Morning</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Aquarium</string>
+		<key>group</key>
+		<string>Morning</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Water</string>
+		<key>group</key>
+		<string>Leaving home</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lamp</string>
+		<key>group</key>
+		<string>Leaving home</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Gaz</string>
+		<key>group</key>
+		<string>Leaving home</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Iron</string>
+		<key>group</key>
+		<string>Leaving home</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Fridge</string>
+		<key>group</key>
+		<string>Leaving home</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Feedcat</string>
+		<key>group</key>
+		<string>Leaving home</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>washing1</string>
+		<key>group</key>
+		<string>Washing machine</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>washing2</string>
+		<key>group</key>
+		<string>Washing machine</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>washing3</string>
+		<key>group</key>
+		<string>Washing machine</string>
+	</dict>
+</array>
+</plist>
