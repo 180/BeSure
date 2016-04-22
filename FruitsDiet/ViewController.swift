@@ -65,12 +65,14 @@ class ViewController: UIViewController {
     
     func highlightCell(indexPath : NSIndexPath, flag: Bool) {
         
-        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! FruitCell
         
         if flag {
-            cell?.contentView.backgroundColor = UIColor.greenColor()
+            cell.contentView.backgroundColor = UIColor.greenColor()
+            cell.tickImageView.hidden = false
         } else {
-            cell?.contentView.backgroundColor = nil
+            cell.contentView.backgroundColor = nil
+             cell.tickImageView.hidden = true
         }
     }
     
@@ -134,8 +136,7 @@ extension ViewController : UICollectionViewDataSource {
         let name = fruit.name!
         
         cell.imageView.image = UIImage(named: name.lowercaseString)
-        cell.caption.text = name.capitalizedString
-        
+            
         return cell
     }
     

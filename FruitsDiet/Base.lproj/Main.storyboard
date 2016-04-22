@@ -32,22 +32,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="qRT-OH-f8i">
-                                                    <rect key="frame" x="0.0" y="0.0" width="195" height="162"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nyJ-P7-aOb">
-                                                    <rect key="frame" x="35" y="160" width="125" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick" id="zJ1-a3-PNr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
-                                            <outlet property="caption" destination="nyJ-P7-aOb" id="Sy9-d6-kZH"/>
                                             <outlet property="imageView" destination="qRT-OH-f8i" id="TwF-Sg-Yqk"/>
+                                            <outlet property="tickImageView" destination="zJ1-a3-PNr" id="n4v-iD-FE8"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -63,7 +60,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.090196078431372548" green="0.58039215686274503" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <outlet property="sectionLabel" destination="vMC-aH-dOj" id="9Ll-0m-eY9"/>
                                     </connections>
@@ -119,4 +116,7 @@
             <point key="canvasLocation" x="130" y="307"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tick" width="250" height="250"/>
+    </resources>
 </document>

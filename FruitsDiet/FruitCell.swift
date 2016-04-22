@@ -12,4 +12,5 @@ class FruitCell: UICollectionViewCell {
     
     @IBOutlet weak var caption: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var tickImageView: UIImageView!
 }
