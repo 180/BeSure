@@ -56,6 +56,9 @@ class AddViewController: UIViewController {
         daysButton.layer.borderColor = UIColor.App.buttonEnable.CGColor
         daysButton.layer.borderWidth = 0.5
         
+        btnManuallyTapped(buttonManually)
+        buttonMinutesTapped(minutesButton)
+        
     }
     
     func unselectAll(){
@@ -66,6 +69,7 @@ class AddViewController: UIViewController {
         buttonManually.backgroundColor = UIColor.whiteColor()
         buttonTime.backgroundColor = UIColor.whiteColor()
         buttonLocation.backgroundColor = UIColor.whiteColor()
+        timePicker.hidden = true
     }
     
     func unselectBottom(){
@@ -75,6 +79,7 @@ class AddViewController: UIViewController {
         minutesButton.backgroundColor = UIColor.whiteColor()
         hoursBtn.backgroundColor = UIColor.whiteColor()
         daysButton.backgroundColor = UIColor.whiteColor()
+        timePicker.hidden = true
     }
     
     @IBAction func btnManuallyTapped(sender: AnyObject) {
@@ -104,6 +109,7 @@ class AddViewController: UIViewController {
             buttonRepeat.selected = true
         }
         coverView.hidden = buttonRepeat.selected
+        timePicker.hidden = true
     }
     
     @IBAction func buttonMinutesTapped(sender: AnyObject) {
@@ -142,6 +148,13 @@ class AddViewController: UIViewController {
     
     @IBAction func createButtonTapped(sender: AnyObject) {
         
+    }
+    
+}
+
+extension AddViewController: UITextFieldDelegate{
+    func textFieldDidBeginEditing(textField: UITextField) {
+        timePicker.hidden = true
     }
     
 }
