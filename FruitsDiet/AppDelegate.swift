@@ -82,10 +82,18 @@ extension AppDelegate: KTKBeaconManagerDelegate {
         
         importAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler:{(alert: UIAlertAction!) in
             print("papa")
-            let listVC = TableViewController()
-            UIApplication.topViewController()?.presentViewController(listVC, animated: true, completion: nil)
-                   }))
+//            let listVC = ViewController()
+//            listVC.category = 1
+//            UIApplication.topViewController()?.presentViewController(listVC, animated: true, completion: nil)
+//                   }))
         
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+            nextViewController.category = 0
+        UIApplication.topViewController()!.navigationController?.pushViewController(nextViewController, animated: true)
+    }))
+    
         self.window?.rootViewController?.presentViewController(importAlert, animated: true, completion: nil)
     }
     
@@ -100,9 +108,10 @@ extension AppDelegate: KTKBeaconManagerDelegate {
         
         importAlert.addAction(UIAlertAction(title: "Ok, pokaż listę", style: .Default, handler:{(alert: UIAlertAction!) in
             print("papa")
-            let listVC = TableViewController()
-        
-            UIApplication.topViewController()?.presentViewController(listVC, animated: true, completion: nil)
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+            nextViewController.category = 0
+            UIApplication.topViewController()!.navigationController?.pushViewController(nextViewController, animated: true)
         }))
         
         self.window?.rootViewController?.presentViewController(importAlert, animated: true, completion: nil)
