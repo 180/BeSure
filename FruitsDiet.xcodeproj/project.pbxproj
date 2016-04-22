@@ -26,6 +26,7 @@
 		BF3374011CCA6480001A6D18 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3374001CCA6480001A6D18 /* NSDate+Extension.swift */; };
 		BF3374031CCA7E6F001A6D18 /* Action.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3374021CCA7E6F001A6D18 /* Action.storyboard */; };
 		BF3374051CCA8A69001A6D18 /* AddImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3374041CCA8A69001A6D18 /* AddImagesViewController.swift */; };
+		BF3374071CCAA554001A6D18 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3374061CCAA554001A6D18 /* UIApplication+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		BF3374001CCA6480001A6D18 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		BF3374021CCA7E6F001A6D18 /* Action.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Action.storyboard; sourceTree = "<group>"; };
 		BF3374041CCA8A69001A6D18 /* AddImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddImagesViewController.swift; sourceTree = "<group>"; };
+		BF3374061CCAA554001A6D18 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		C0A9E7DD1889DA54B81C27F0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D033B262F5F8D8200D53AA1D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F62D82951E14673273058E9C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 		BF3373FD1CCA5F7E001A6D18 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BF3374061CCAA554001A6D18 /* UIApplication+Extension.swift */,
 				BF3373FE1CCA5F9A001A6D18 /* UIColor+Extension.swift */,
 				BF3374001CCA6480001A6D18 /* NSDate+Extension.swift */,
 			);
@@ -395,6 +398,7 @@
 				48F401621B6A57BB00629110 /* FruitsHeaderView.swift in Sources */,
 				48F199991B690CC000614BB9 /* AppDelegate.swift in Sources */,
 				BF3373FF1CCA5F9A001A6D18 /* UIColor+Extension.swift in Sources */,
+				BF3374071CCAA554001A6D18 /* UIApplication+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
