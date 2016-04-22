@@ -21,6 +21,7 @@
 		48F401621B6A57BB00629110 /* FruitsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F401611B6A57BB00629110 /* FruitsHeaderView.swift */; };
 		4E8FB1DF1CCA5F8900B77911 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FB1DE1CCA5F8900B77911 /* TableViewController.swift */; };
 		4E8FB1E11CCA672D00B77911 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FB1E01CCA672D00B77911 /* ListCell.swift */; };
+		4E8FB1E31CCA9C4D00B77911 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FB1E21CCA9C4D00B77911 /* Notifications.swift */; };
 		BF3373FC1CCA5132001A6D18 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3373FB1CCA5132001A6D18 /* AddViewController.swift */; };
 		BF3373FF1CCA5F9A001A6D18 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3373FE1CCA5F9A001A6D18 /* UIColor+Extension.swift */; };
 		BF3374011CCA6480001A6D18 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3374001CCA6480001A6D18 /* NSDate+Extension.swift */; };
@@ -56,6 +57,7 @@
 		48F401611B6A57BB00629110 /* FruitsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsHeaderView.swift; sourceTree = "<group>"; };
 		4E8FB1DE1CCA5F8900B77911 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		4E8FB1E01CCA672D00B77911 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		4E8FB1E21CCA9C4D00B77911 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		BF3373FB1CCA5132001A6D18 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		BF3373FE1CCA5F9A001A6D18 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		BF3374001CCA6480001A6D18 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				48F199981B690CC000614BB9 /* AppDelegate.swift */,
+				4E8FB1E21CCA9C4D00B77911 /* Notifications.swift */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -282,6 +285,12 @@
 				TargetAttributes = {
 					48F199921B690CC000614BB9 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = K8WKU3XKKY;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					48F199A71B690CC000614BB9 = {
 						CreatedOnToolsVersion = 6.4;
@@ -388,6 +397,7 @@
 				BF3374051CCA8A69001A6D18 /* AddImagesViewController.swift in Sources */,
 				48F401601B6A3D9700629110 /* FruitCell.swift in Sources */,
 				BF3373FC1CCA5132001A6D18 /* AddViewController.swift in Sources */,
+				4E8FB1E31CCA9C4D00B77911 /* Notifications.swift in Sources */,
 				BF3374011CCA6480001A6D18 /* NSDate+Extension.swift in Sources */,
 				48F199BD1B6931AA00614BB9 /* DataSource.swift in Sources */,
 				48F1999B1B690CC000614BB9 /* ViewController.swift in Sources */,
