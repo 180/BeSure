@@ -43,7 +43,9 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ListCell
         
         cell.listNameLabel.text = dataSource.gettGroupLabelAtIndex(indexPath.row)
-        cell.timeLabel.text = "dziś 9:30"
+        cell.timeLabel.text = "Dziś 22:3\(indexPath.row+3)"
+        
+        cell.statusIconImageView.hidden = (NSInteger(indexPath.row/2) == 0 ) ? true : false
         
         return cell
     }
