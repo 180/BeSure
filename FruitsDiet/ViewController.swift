@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     let identifier = "CellIdentifier"
     let headerViewIdentifier = "HeaderView"
     
+    var category:NSInteger?
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var toolBar: UIToolbar!
@@ -26,7 +28,8 @@ class ViewController: UIViewController {
         collectionView.delegate = self
         collectionView.allowsMultipleSelection = true
         
-        navigationItem.leftBarButtonItem = editButtonItem()
+        navigationItem.leftBarButtonItem = navigationItem.backBarButtonItem
+        navigationItem.rightBarButtonItem = editButtonItem()
         toolBar.hidden = true
         
     }
@@ -67,7 +70,7 @@ class ViewController: UIViewController {
         
         let cell = collectionView.cellForItemAtIndexPath(indexPath) as! FruitCell
         
-        let fruits: [Fruit] = dataSource.fruitsInGroup(indexPath.section)
+        let fruits: [Fruit] = dataSource.fruitsInGroup(category!)
         let fruit = fruits[indexPath.row]
         fruit.checked = !fruit.checked!
         
@@ -106,7 +109,7 @@ class ViewController: UIViewController {
             for item  in indexpaths {
                 collectionView?.deselectItemAtIndexPath((item), animated: true)
                 // fruits for section
-                let sectionfruits = dataSource.fruitsInGroup(item.section)
+                let sectionfruits = dataSource.fruitsInGroup(category!)
                 deletedFruits.append(sectionfruits[item.row])
             }
             
@@ -122,17 +125,17 @@ class ViewController: UIViewController {
 extension ViewController : UICollectionViewDataSource {
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return dataSource.groups.count
+        return 1
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataSource.numbeOfRowsInEachGroup(section)
+        return dataSource.numbeOfRowsInEachGroup(category!)
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier,forIndexPath:indexPath) as! FruitCell
         
-        let fruits: [Fruit] = dataSource.fruitsInGroup(indexPath.section)
+        let fruits: [Fruit] = dataSource.fruitsInGroup(category!)
         let fruit = fruits[indexPath.row]
         
         let name = fruit.name!
@@ -152,7 +155,7 @@ extension ViewController : UICollectionViewDataSource {
         
         let headerView: FruitsHeaderView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: headerViewIdentifier, forIndexPath: indexPath) as! FruitsHeaderView
         
-        headerView.sectionLabel.text = dataSource.gettGroupLabelAtIndex(indexPath.section)
+        headerView.sectionLabel.text = dataSource.gettGroupLabelAtIndex(category!)
         
         return headerView
     }

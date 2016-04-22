@@ -19,6 +19,8 @@
 		48F4015D1B6A2F4500629110 /* items.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48F4015C1B6A2F4500629110 /* items.plist */; };
 		48F401601B6A3D9700629110 /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4015F1B6A3D9700629110 /* FruitCell.swift */; };
 		48F401621B6A57BB00629110 /* FruitsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F401611B6A57BB00629110 /* FruitsHeaderView.swift */; };
+		4E8FB1DF1CCA5F8900B77911 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FB1DE1CCA5F8900B77911 /* TableViewController.swift */; };
+		4E8FB1E11CCA672D00B77911 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FB1E01CCA672D00B77911 /* ListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		48F4015C1B6A2F4500629110 /* items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = items.plist; sourceTree = "<group>"; };
 		48F4015F1B6A3D9700629110 /* FruitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
 		48F401611B6A57BB00629110 /* FruitsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsHeaderView.swift; sourceTree = "<group>"; };
+		4E8FB1DE1CCA5F8900B77911 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4E8FB1E01CCA672D00B77911 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		C0A9E7DD1889DA54B81C27F0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D033B262F5F8D8200D53AA1D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F62D82951E14673273058E9C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				48F1999A1B690CC000614BB9 /* ViewController.swift */,
+				4E8FB1DE1CCA5F8900B77911 /* TableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				48F4015F1B6A3D9700629110 /* FruitCell.swift */,
+				4E8FB1E01CCA672D00B77911 /* ListCell.swift */,
 				48F401611B6A57BB00629110 /* FruitsHeaderView.swift */,
 			);
 			name = View;
@@ -354,9 +360,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F4015B1B6A05DD00629110 /* Fruit.swift in Sources */,
+				4E8FB1DF1CCA5F8900B77911 /* TableViewController.swift in Sources */,
 				48F401601B6A3D9700629110 /* FruitCell.swift in Sources */,
 				48F199BD1B6931AA00614BB9 /* DataSource.swift in Sources */,
 				48F1999B1B690CC000614BB9 /* ViewController.swift in Sources */,
+				4E8FB1E11CCA672D00B77911 /* ListCell.swift in Sources */,
 				48F401621B6A57BB00629110 /* FruitsHeaderView.swift in Sources */,
 				48F199991B690CC000614BB9 /* AppDelegate.swift in Sources */,
 			);
