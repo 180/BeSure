@@ -67,8 +67,11 @@ class ViewController: UIViewController {
         
         let cell = collectionView.cellForItemAtIndexPath(indexPath) as! FruitCell
         
+        let fruits: [Fruit] = dataSource.fruitsInGroup(indexPath.section)
+        let fruit = fruits[indexPath.row]
+        fruit.checked = !fruit.checked!
         
-        if flag {
+        if fruit.checked! {
             cell.tickImageView.hidden = false
         } else {
             cell.tickImageView.hidden = true
@@ -133,6 +136,12 @@ extension ViewController : UICollectionViewDataSource {
         let fruit = fruits[indexPath.row]
         
         let name = fruit.name!
+        
+        if fruit.checked! {
+            cell.tickImageView.hidden = false
+        } else {
+            cell.tickImageView.hidden = true
+        }
         
         cell.imageView.image = UIImage(named: name.lowercaseString)
         

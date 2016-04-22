@@ -5,72 +5,96 @@
 	<dict>
 		<key>name</key>
 		<string>Feedcat</string>
+		<key>checked</key>
+		<false/>
 		<key>group</key>
 		<string>Morning</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Pill1</string>
+		<key>checked</key>
+		<false/>
 		<key>group</key>
 		<string>Morning</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Aquarium</string>
+        <key>checked</key>
+        <false/>
 		<key>group</key>
 		<string>Morning</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Water</string>
+        <key>checked</key>
+        <false/>
 		<key>group</key>
 		<string>Leaving home</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Lamp</string>
+        <key>checked</key>
+        <false/>
 		<key>group</key>
 		<string>Leaving home</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Gaz</string>
+        <key>checked</key>
+        <false/>
 		<key>group</key>
 		<string>Leaving home</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Iron</string>
+        <key>checked</key>
+        <false/>
 		<key>group</key>
 		<string>Leaving home</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Fridge</string>
+        <key>checked</key>
+        <false/>
 		<key>group</key>
 		<string>Leaving home</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Feedcat</string>
+        <key>checked</key>
+        <false/>
 		<key>group</key>
 		<string>Leaving home</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>washing1</string>
+        <key>checked</key>
+        <false/>
 		<key>group</key>
 		<string>Washing machine</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>washing2</string>
+        <key>checked</key>
+        <false/>
 		<key>group</key>
 		<string>Washing machine</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>washing3</string>
+        <key>checked</key>
+        <false/>
 		<key>group</key>
 		<string>Washing machine</string>
 	</dict>

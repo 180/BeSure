@@ -9,9 +9,11 @@
 class Fruit {
     var name:String?
     var group:String?
+    var checked:Bool?
     
-    init(name: String, group: String) {
+    init(name: String, group: String, checked: Bool) {
         self.name = name
         self.group = group
+        self.checked = checked
     }
 }

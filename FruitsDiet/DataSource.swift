@@ -39,8 +39,9 @@ class DataSource {
                     if let dict = item as? NSDictionary {
                         let name = dict["name"] as! String
                         let group = dict["group"] as! String
+                        let checked = dict["checked"] as! Bool
                         
-                        let fruit = Fruit(name: name, group: group)
+                        let fruit = Fruit(name: name, group: group, checked: checked)
                         if !groups.contains(group){
                             groups.append(group)
                         }
@@ -65,7 +66,7 @@ class DataSource {
     
     func addAndGetIndexForNewItem() -> Int {
         
-        let fruit = Fruit(name: "SugarApple", group: "Morning")
+        let fruit = Fruit(name: "SugarApple", group: "Morning", checked: false)
         
         let count = fruitsInGroup(0).count
         
