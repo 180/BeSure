@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.allowsMultipleSelection = true
         
         navigationItem.leftBarButtonItem = editButtonItem()
         toolBar.hidden = true
@@ -77,7 +78,6 @@ class ViewController: UIViewController {
     
     override func setEditing(editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
-        collectionView?.allowsMultipleSelection = editing
         toolBar.hidden = !editing
     }
     
