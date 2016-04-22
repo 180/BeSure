@@ -8,6 +8,7 @@
 
 import UIKit
 import KontaktSDK
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var beaconManager: KTKBeaconManager!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().enableAutoToolbar = false
+        IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
         // Override point for customization after application launch.
         // Set API Key
         Kontakt.setAPIKey("aRoeUpfkNosHVdIJOZiMcozMZJGAGpDc")

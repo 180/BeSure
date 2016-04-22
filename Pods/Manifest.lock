@@ -1,10 +1,13 @@
 PODS:
+  - IQKeyboardManagerSwift (3.3.7)
   - KontaktSDK (1.1.3)
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift (~> 3.3.1)
   - KontaktSDK (~> 1.0)
 
 SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 7d06186460470f3f7e767630861a1303980ee5cf
   KontaktSDK: 9df6b1c0797b61318352dcc7cd70bc2edf60b921
 
 COCOAPODS: 0.39.0

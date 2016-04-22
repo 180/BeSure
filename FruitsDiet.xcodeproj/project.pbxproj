@@ -24,6 +24,7 @@
 		BF3373FC1CCA5132001A6D18 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3373FB1CCA5132001A6D18 /* AddViewController.swift */; };
 		BF3373FF1CCA5F9A001A6D18 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3373FE1CCA5F9A001A6D18 /* UIColor+Extension.swift */; };
 		BF3374011CCA6480001A6D18 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3374001CCA6480001A6D18 /* NSDate+Extension.swift */; };
+		BF3374031CCA7E6F001A6D18 /* Action.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3374021CCA7E6F001A6D18 /* Action.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		BF3373FB1CCA5132001A6D18 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		BF3373FE1CCA5F9A001A6D18 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		BF3374001CCA6480001A6D18 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		BF3374021CCA7E6F001A6D18 /* Action.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Action.storyboard; sourceTree = "<group>"; };
 		C0A9E7DD1889DA54B81C27F0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D033B262F5F8D8200D53AA1D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F62D82951E14673273058E9C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				48F199A11B690CC000614BB9 /* LaunchScreen.xib */,
 				48F1999C1B690CC000614BB9 /* Main.storyboard */,
 				48F1999F1B690CC000614BB9 /* Images.xcassets */,
+				BF3374021CCA7E6F001A6D18 /* Action.storyboard */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			files = (
 				48F1999E1B690CC000614BB9 /* Main.storyboard in Resources */,
 				48F199A31B690CC000614BB9 /* LaunchScreen.xib in Resources */,
+				BF3374031CCA7E6F001A6D18 /* Action.storyboard in Resources */,
 				48F199A01B690CC000614BB9 /* Images.xcassets in Resources */,
 				48F4015D1B6A2F4500629110 /* items.plist in Resources */,
 			);
