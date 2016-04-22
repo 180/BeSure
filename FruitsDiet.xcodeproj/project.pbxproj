@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		48F199931B690CC000614BB9 /* FruitsDiet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitsDiet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F199931B690CC000614BB9 /* BeSure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeSure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F199971B690CC000614BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48F199981B690CC000614BB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F1999A1B690CC000614BB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		48F199941B690CC000614BB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				48F199931B690CC000614BB9 /* FruitsDiet.app */,
+				48F199931B690CC000614BB9 /* BeSure.app */,
 				48F199A81B690CC000614BB9 /* FruitsDietTests.xctest */,
 			);
 			name = Products;
@@ -248,7 +248,7 @@
 			);
 			name = FruitsDiet;
 			productName = FruitsDiet;
-			productReference = 48F199931B690CC000614BB9 /* FruitsDiet.app */;
+			productReference = 48F199931B690CC000614BB9 /* BeSure.app */;
 			productType = "com.apple.product-type.application";
 		};
 		48F199A71B690CC000614BB9 /* FruitsDietTests */ = {
@@ -526,7 +526,8 @@
 				INFOPLIST_FILE = FruitsDiet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rshankar.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = BeSure;
+				PRODUCT_NAME = BeSure;
 			};
 			name = Debug;
 		};
@@ -538,7 +539,8 @@
 				INFOPLIST_FILE = FruitsDiet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rshankar.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = BeSure;
+				PRODUCT_NAME = BeSure;
 			};
 			name = Release;
 		};
