@@ -19,6 +19,7 @@ class Notifications {
         let dateTime = NSDate()
         notification.fireDate = dateTime
         notification.alertBody = text
+        notification.soundName = UILocalNotificationDefaultSoundName
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
         
     }
