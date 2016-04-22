@@ -88,6 +88,15 @@ class DataSource {
             }
         }
     }
+    
+    func saveItem(item: Fruit) {
+            let index = fruits.indexOfObject(item)
+        if index != -1 {
+            fruits[index] = item;
+        }
+        
+    }
+
 }
 
 extension Array {

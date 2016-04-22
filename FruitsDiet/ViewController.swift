@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     let headerViewIdentifier = "HeaderView"
     
     var category:NSInteger?
+    var checkCounter:NSInteger = 0
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -73,11 +74,32 @@ class ViewController: UIViewController {
         let fruits: [Fruit] = dataSource.fruitsInGroup(category!)
         let fruit = fruits[indexPath.row]
         fruit.checked = !fruit.checked!
+        dataSource.saveItem(fruit)
         
         if fruit.checked! {
             cell.tickImageView.hidden = false
         } else {
             cell.tickImageView.hidden = true
+        }
+        
+        checkCounter += 1
+        
+        if checkCounter == dataSource.numbeOfRowsInEachGroup(category!) {
+            
+            let alertController = UIAlertController(title: "Wygląda na to, że zrobiłeś wszystko", message:
+                "Czy jesteś pewien?", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Nie", style: UIAlertActionStyle.Default,handler: nil))
+            
+            alertController.addAction(UIAlertAction(title: "Tak", style: .Default, handler:{(alert: UIAlertAction!) in
+                
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("TableViewController") as! TableViewController
+                UIApplication.topViewController()!.navigationController?.pushViewController(nextViewController, animated: true)
+            }))
+            
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
         }
     }
     

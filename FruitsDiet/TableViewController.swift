@@ -43,7 +43,14 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ListCell
         
         cell.listNameLabel.text = dataSource.gettGroupLabelAtIndex(indexPath.row)
-        cell.timeLabel.text = "Dziś 22:3\(indexPath.row+3)"
+        
+        let date = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components([ .Hour, .Minute, .Second], fromDate: date)
+        let hour = components.hour
+        let minutes = components.minute
+        
+        cell.timeLabel.text = "Dziś \(hour):\(minutes-indexPath.row*2)"
         
         cell.statusIconImageView.hidden = (NSInteger(indexPath.row/2) == 0 ) ? true : false
         
