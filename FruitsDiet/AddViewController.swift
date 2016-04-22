@@ -22,7 +22,14 @@ class AddViewController: UIViewController {
     @IBOutlet weak var hoursBtn: UIButton!
     @IBOutlet weak var daysButton: UIButton!
     
+    @IBOutlet weak var pickerView: UIPickerView!
+    
     @IBOutlet weak var coverView: UIView!
+    
+    @IBOutlet weak var nameLabel: UITextField!
+    @IBOutlet weak var pickerViewConstraints: NSLayoutConstraint!
+    
+    var pickerDataSource = ["Kitchen", "Exit door", "Bathroom"];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +77,7 @@ class AddViewController: UIViewController {
         buttonTime.backgroundColor = UIColor.whiteColor()
         buttonLocation.backgroundColor = UIColor.whiteColor()
         timePicker.hidden = true
+        pickerViewConstraints.constant = 0
     }
     
     func unselectBottom(){
@@ -100,6 +108,7 @@ class AddViewController: UIViewController {
         unselectAll()
         buttonLocation.selected = true
         buttonLocation.backgroundColor = UIColor.App.buttonEnable
+        pickerViewConstraints.constant = 150
     }
 
     @IBAction func buttonRepeatTapped(sender: AnyObject) {
@@ -148,6 +157,15 @@ class AddViewController: UIViewController {
     
     @IBAction func createButtonTapped(sender: AnyObject) {
         
+        if nameLabel.text?.characters.count>0 {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("AddImagesViewController") as! AddImagesViewController
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+        } else {
+            let importAlert: UIAlertController = UIAlertController(title: "Warning", message: "Name cannot be empty", preferredStyle: UIAlertControllerStyle.Alert)
+            importAlert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler:nil))
+            self.presentViewController(importAlert, animated: true, completion: nil)
+        }
         
     }
     
@@ -158,4 +176,20 @@ extension AddViewController: UITextFieldDelegate{
         timePicker.hidden = true
     }
     
+}
+
+
+extension AddViewController: UIPickerViewDelegate, UIPickerViewDataSource{
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerDataSource.count;
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerDataSource[row]
+    }
 }

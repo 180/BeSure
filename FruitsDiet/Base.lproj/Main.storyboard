@@ -9,13 +9,13 @@
         <!--BeSure-->
         <scene sceneID="GhC-vU-G2g">
             <objects>
-                <tableViewController id="3Yr-pf-8Xd" customClass="TableViewController" customModule="FruitsDiet" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="3Yr-pf-8Xd" customClass="TableViewController" customModule="BeSure" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="v1L-qf-LIs">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="listCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="listCell" id="b83-Lg-9Pe" customClass="ListCell" customModule="FruitsDiet" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="listCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="listCell" id="b83-Lg-9Pe" customClass="ListCell" customModule="BeSure" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b83-Lg-9Pe" id="TBW-zy-hG6">
@@ -84,7 +84,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FruitsDiet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="BeSure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jte-Du-2V8"/>
                         <viewControllerLayoutGuide type="bottom" id="Oum-u4-tfB"/>
@@ -114,7 +114,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellIdentifier" id="z5H-yY-Rix" customClass="FruitCell" customModule="FruitsDiet" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellIdentifier" id="z5H-yY-Rix" customClass="FruitCell" customModule="BeSure" customModuleProvider="target">
                                         <rect key="frame" x="69" y="50" width="182" height="182"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -153,7 +153,7 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" restorationIdentifier="HeaderView" reuseIdentifier="HeaderView" id="oPi-dl-DJ8" customClass="FruitsHeaderView" customModule="FruitsDiet" customModuleProvider="target">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" restorationIdentifier="HeaderView" reuseIdentifier="HeaderView" id="oPi-dl-DJ8" customClass="FruitsHeaderView" customModule="BeSure" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -219,7 +219,7 @@
         <!--New Action-->
         <scene sceneID="wLf-eJ-ai9">
             <objects>
-                <viewController id="SJj-We-fwN" customClass="AddViewController" customModule="FruitsDiet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SJj-We-fwN" customClass="AddViewController" customModule="BeSure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vrV-cS-ctf"/>
                         <viewControllerLayoutGuide type="bottom" id="E3C-85-H3K"/>
@@ -299,7 +299,17 @@
                                     <action selector="btnLocationTapped:" destination="SJj-We-fwN" eventType="touchUpInside" id="dav-0Y-OLH"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoM-7P-udE">
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzs-aE-czD">
+                                <rect key="frame" x="0.0" y="149" width="320" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="9MC-ue-ddm"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="SJj-We-fwN" id="qGB-Tm-PvW"/>
+                                    <outlet property="delegate" destination="SJj-We-fwN" id="9gh-57-mjV"/>
+                                </connections>
+                            </pickerView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hoM-7P-udE">
                                 <rect key="frame" x="10" y="161" width="300" height="335"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Remind at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjf-wg-dmf">
@@ -345,7 +355,7 @@
                                             <action selector="timeSelectionTapped:" destination="SJj-We-fwN" eventType="touchUpInside" id="x1d-Yz-f3k"/>
                                         </connections>
                                     </button>
-                                    <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="M7k-SQ-O8k">
+                                    <datePicker hidden="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="M7k-SQ-O8k">
                                         <rect key="frame" x="-10" y="126" width="320" height="216"/>
                                         <date key="date" timeIntervalSinceReferenceDate="483025388.87448102">
                                             <!--2016-04-22 13:43:08 +0000-->
@@ -462,19 +472,20 @@
                                 <state key="normal" title="ADD STEPS"/>
                                 <connections>
                                     <action selector="createButtonTapped:" destination="SJj-We-fwN" eventType="touchUpInside" id="88y-NE-I2w"/>
-                                    <segue destination="5Ya-oO-Ltx" kind="push" id="q5V-va-w62"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bj2-4B-5up" firstAttribute="top" secondItem="N2c-lZ-7CK" secondAttribute="top" id="0bu-0R-DdZ"/>
+                            <constraint firstAttribute="trailing" secondItem="pzs-aE-czD" secondAttribute="trailing" id="1zB-cE-WdU"/>
                             <constraint firstItem="N2c-lZ-7CK" firstAttribute="leading" secondItem="GfM-Ea-5J0" secondAttribute="leading" constant="30" id="2UQ-GA-EOa"/>
                             <constraint firstItem="2df-Qy-dTm" firstAttribute="width" secondItem="N2c-lZ-7CK" secondAttribute="width" id="3Cx-Me-v0Q"/>
                             <constraint firstItem="o0D-Bu-Mdf" firstAttribute="leading" secondItem="yuK-b1-8B7" secondAttribute="leading" id="4i8-Rz-NA5"/>
                             <constraint firstItem="yuK-b1-8B7" firstAttribute="top" secondItem="vrV-cS-ctf" secondAttribute="bottom" constant="20" id="AZS-Tr-omR"/>
                             <constraint firstItem="yuK-b1-8B7" firstAttribute="leading" secondItem="GfM-Ea-5J0" secondAttribute="leading" constant="20" id="CRC-TB-YTN"/>
                             <constraint firstItem="N2c-lZ-7CK" firstAttribute="top" secondItem="o0D-Bu-Mdf" secondAttribute="bottom" constant="8" id="Hle-hJ-5Gb"/>
+                            <constraint firstItem="pzs-aE-czD" firstAttribute="top" secondItem="2df-Qy-dTm" secondAttribute="bottom" id="J6g-Kb-gnj"/>
                             <constraint firstAttribute="trailing" secondItem="hoM-7P-udE" secondAttribute="trailing" constant="10" id="J8w-lO-Sn1"/>
                             <constraint firstItem="bj2-4B-5up" firstAttribute="leading" secondItem="N2c-lZ-7CK" secondAttribute="trailing" id="Ntu-18-dWj"/>
                             <constraint firstItem="E3C-85-H3K" firstAttribute="top" secondItem="hoM-7P-udE" secondAttribute="bottom" constant="8" id="R7Y-dm-xkR"/>
@@ -484,11 +495,12 @@
                             <constraint firstItem="2df-Qy-dTm" firstAttribute="top" secondItem="N2c-lZ-7CK" secondAttribute="top" id="cZQ-Ph-d8a"/>
                             <constraint firstItem="o0D-Bu-Mdf" firstAttribute="top" secondItem="31j-ht-9R9" secondAttribute="bottom" constant="8" id="fCh-n0-IGM"/>
                             <constraint firstItem="31j-ht-9R9" firstAttribute="leading" secondItem="GfM-Ea-5J0" secondAttribute="leadingMargin" constant="20" id="gIP-Aw-48g"/>
+                            <constraint firstItem="hoM-7P-udE" firstAttribute="top" secondItem="pzs-aE-czD" secondAttribute="bottom" constant="10" id="gKy-W4-yh4"/>
                             <constraint firstItem="31j-ht-9R9" firstAttribute="trailing" secondItem="GfM-Ea-5J0" secondAttribute="trailingMargin" id="h0N-0n-UKC"/>
+                            <constraint firstItem="pzs-aE-czD" firstAttribute="leading" secondItem="GfM-Ea-5J0" secondAttribute="leading" id="hpa-cj-sz2"/>
                             <constraint firstItem="Dws-AP-z0N" firstAttribute="leading" secondItem="GfM-Ea-5J0" secondAttribute="leading" id="mZV-Ua-a8w"/>
                             <constraint firstItem="hoM-7P-udE" firstAttribute="leading" secondItem="GfM-Ea-5J0" secondAttribute="leading" constant="10" id="mZz-EJ-2BM"/>
                             <constraint firstAttribute="trailing" secondItem="Dws-AP-z0N" secondAttribute="trailing" id="nZZ-E9-5pN"/>
-                            <constraint firstItem="hoM-7P-udE" firstAttribute="top" secondItem="2df-Qy-dTm" secondAttribute="bottom" constant="13" id="qzV-2L-b9E"/>
                             <constraint firstItem="2df-Qy-dTm" firstAttribute="leading" secondItem="bj2-4B-5up" secondAttribute="trailing" id="x0n-43-1O3"/>
                             <constraint firstAttribute="trailing" secondItem="2df-Qy-dTm" secondAttribute="trailing" constant="30" id="yVz-bZ-btN"/>
                         </constraints>
@@ -503,6 +515,9 @@
                         <outlet property="daysButton" destination="XAh-T3-2ml" id="fLG-cO-Oqk"/>
                         <outlet property="hoursBtn" destination="hEg-YZ-g4Q" id="cKq-mX-FfM"/>
                         <outlet property="minutesButton" destination="fPQ-to-Trz" id="8jg-m3-H3e"/>
+                        <outlet property="nameLabel" destination="31j-ht-9R9" id="0eP-ZB-sW1"/>
+                        <outlet property="pickerView" destination="pzs-aE-czD" id="PRB-wC-A2L"/>
+                        <outlet property="pickerViewConstraints" destination="9MC-ue-ddm" id="BXo-vJ-D8L"/>
                         <outlet property="remindView" destination="hoM-7P-udE" id="aub-zI-5Pl"/>
                         <outlet property="timeLabel" destination="MuQ-xw-NEa" id="8Ne-HF-fW3"/>
                         <outlet property="timePicker" destination="M7k-SQ-O8k" id="rZt-Mw-h3z"/>
@@ -515,16 +530,16 @@
         <!--Add Images View Controller-->
         <scene sceneID="fcC-y3-C1d">
             <objects>
-                <viewController id="5Ya-oO-Ltx" customClass="AddImagesViewController" customModule="FruitsDiet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddImagesViewController" id="5Ya-oO-Ltx" customClass="AddImagesViewController" customModule="BeSure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H8G-Lb-NEL"/>
                         <viewControllerLayoutGuide type="bottom" id="Twl-Y7-7ow"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hOr-J2-Bdl">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HxH-tv-ROa">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HxH-tv-ROa">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                 <color key="backgroundColor" red="0.92347402899999997" green="0.92347402899999997" blue="0.92347402899999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nF9-Qs-w3f">
@@ -534,7 +549,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellIdentifier" id="Qn8-Aj-75n" customClass="FruitCell" customModule="FruitsDiet" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellIdentifier" id="Qn8-Aj-75n" customClass="FruitCell" customModule="BeSure" customModuleProvider="target">
                                         <rect key="frame" x="69" y="0.0" width="182" height="182"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -575,7 +590,7 @@
                                 </cells>
                             </collectionView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muO-eC-bX3">
-                                <rect key="frame" x="0.0" y="460" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Dxl-Hi-ogX"/>
                                 </constraints>
@@ -586,9 +601,9 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="1KJ-C4-z0X"/>
-                                    <barButtonItem systemItem="trash" id="pQp-pU-d6D">
+                                    <barButtonItem systemItem="done" id="fcm-oW-kZC">
                                         <connections>
-                                            <action selector="deleteCells:" destination="vXZ-lx-hvc" id="huu-ix-vFd"/>
+                                            <action selector="donePressed:" destination="5Ya-oO-Ltx" id="syh-Zt-qMP"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>

@@ -20,6 +20,7 @@ class AddImagesViewController: UIViewController, UIImagePickerControllerDelegate
     let headerViewIdentifier = "HeaderView"
     var imagePickerController: UIImagePickerController?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.allowsMultipleSelection = true
@@ -138,7 +139,13 @@ class AddImagesViewController: UIViewController, UIImagePickerControllerDelegate
         
         imagePickerController?.dismissViewControllerAnimated(true, completion: nil)
     }
-
+    
+    @IBAction func donePressed(sender: AnyObject) {
+        
+        self.navigationController?.popToRootViewControllerAnimated(true)
+        
+    }
+    
 }
 
 // MARK:- UICollectionView DataSource
@@ -195,3 +202,4 @@ extension AddImagesViewController: UICollectionViewDelegateFlowLayout {
         return CGSizeMake(length,length);
     }
 }
+
