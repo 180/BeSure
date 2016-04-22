@@ -90,7 +90,7 @@ extension AppDelegate: KTKBeaconManagerDelegate {
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
-            nextViewController.category = 0
+            nextViewController.category = 1
         UIApplication.topViewController()!.navigationController?.pushViewController(nextViewController, animated: true)
     }))
     
@@ -110,7 +110,7 @@ extension AppDelegate: KTKBeaconManagerDelegate {
             print("papa")
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
-            nextViewController.category = 0
+            nextViewController.category = 1
             UIApplication.topViewController()!.navigationController?.pushViewController(nextViewController, animated: true)
         }))
         
