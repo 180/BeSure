@@ -141,8 +141,13 @@ class AddImagesViewController: UIViewController, UIImagePickerControllerDelegate
     }
     
     @IBAction func donePressed(sender: AnyObject) {
-        
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        let importAlert: UIAlertController = UIAlertController(title: "Success", message: "New Action created", preferredStyle: UIAlertControllerStyle.Alert)
+        let reportAction = UIAlertAction(title: "OK", style: .Default) { (action) -> Void in
+            self.navigationController?.popToRootViewControllerAnimated(true)
+            
+        }
+        importAlert.addAction(reportAction)
+        self.presentViewController(importAlert, animated: true, completion: nil)
         
     }
     
@@ -183,11 +188,11 @@ extension AddImagesViewController : UICollectionViewDataSource {
 extension AddImagesViewController : UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        highlightCell(indexPath, flag: true)
+//        highlightCell(indexPath, flag: true)
     }
     
     func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
-        highlightCell(indexPath, flag: false)
+//        highlightCell(indexPath, flag: false)
     }
 }
 
