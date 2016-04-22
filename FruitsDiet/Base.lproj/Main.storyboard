@@ -512,10 +512,10 @@
             </objects>
             <point key="canvasLocation" x="737" y="-750"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Images View Controller-->
         <scene sceneID="fcC-y3-C1d">
             <objects>
-                <viewController id="5Ya-oO-Ltx" sceneMemberID="viewController">
+                <viewController id="5Ya-oO-Ltx" customClass="AddImagesViewController" customModule="FruitsDiet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H8G-Lb-NEL"/>
                         <viewControllerLayoutGuide type="bottom" id="Twl-Y7-7ow"/>
@@ -523,9 +523,96 @@
                     <view key="view" contentMode="scaleToFill" id="hOr-J2-Bdl">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HxH-tv-ROa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <color key="backgroundColor" red="0.92347402899999997" green="0.92347402899999997" blue="0.92347402899999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nF9-Qs-w3f">
+                                    <size key="itemSize" width="182" height="182"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellIdentifier" id="Qn8-Aj-75n" customClass="FruitCell" customModule="FruitsDiet" customModuleProvider="target">
+                                        <rect key="frame" x="69" y="0.0" width="182" height="182"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="epl-V8-W1I">
+                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="L8A-Ku-ZBd">
+                                                    <rect key="frame" x="11" y="11" width="160" height="160"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boarder" translatesAutoresizingMaskIntoConstraints="NO" id="r9d-3R-TQw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="epl-V8-W1I" firstAttribute="top" secondItem="Qn8-Aj-75n" secondAttribute="top" id="0Ml-D6-RGK"/>
+                                            <constraint firstItem="L8A-Ku-ZBd" firstAttribute="leading" secondItem="Qn8-Aj-75n" secondAttribute="leadingMargin" constant="3" id="3DP-sy-Bac"/>
+                                            <constraint firstItem="epl-V8-W1I" firstAttribute="leading" secondItem="r9d-3R-TQw" secondAttribute="leading" id="6VM-TN-hIj"/>
+                                            <constraint firstItem="L8A-Ku-ZBd" firstAttribute="centerX" secondItem="r9d-3R-TQw" secondAttribute="centerX" id="6c4-Bl-rKS"/>
+                                            <constraint firstItem="epl-V8-W1I" firstAttribute="trailing" secondItem="r9d-3R-TQw" secondAttribute="trailing" id="9w8-Db-7Fw"/>
+                                            <constraint firstAttribute="bottom" secondItem="epl-V8-W1I" secondAttribute="bottom" id="BJr-jN-hwW"/>
+                                            <constraint firstItem="epl-V8-W1I" firstAttribute="bottom" secondItem="r9d-3R-TQw" secondAttribute="bottom" id="P7Q-Uh-CFp"/>
+                                            <constraint firstItem="L8A-Ku-ZBd" firstAttribute="centerY" secondItem="r9d-3R-TQw" secondAttribute="centerY" id="Uok-dN-LLr"/>
+                                            <constraint firstItem="epl-V8-W1I" firstAttribute="top" secondItem="r9d-3R-TQw" secondAttribute="top" id="VBW-Gd-NwP"/>
+                                            <constraint firstItem="L8A-Ku-ZBd" firstAttribute="top" secondItem="Qn8-Aj-75n" secondAttribute="topMargin" constant="3" id="VsT-n1-xbR"/>
+                                            <constraint firstItem="epl-V8-W1I" firstAttribute="leading" secondItem="Qn8-Aj-75n" secondAttribute="leading" id="dsG-OQ-iKP"/>
+                                            <constraint firstAttribute="trailing" secondItem="epl-V8-W1I" secondAttribute="trailing" id="xFE-RQ-Zyr"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="epl-V8-W1I" id="gnR-0T-D6j"/>
+                                            <outlet property="tickImageView" destination="L8A-Ku-ZBd" id="wxu-fW-q3n"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muO-eC-bX3">
+                                <rect key="frame" x="0.0" y="460" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Dxl-Hi-ogX"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="add" id="sa3-ZZ-g9j">
+                                        <connections>
+                                            <action selector="addNextTapped:" destination="5Ya-oO-Ltx" id="8QC-1p-U7X"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1KJ-C4-z0X"/>
+                                    <barButtonItem systemItem="trash" id="pQp-pU-d6D">
+                                        <connections>
+                                            <action selector="deleteCells:" destination="vXZ-lx-hvc" id="huu-ix-vFd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="muO-eC-bX3" firstAttribute="top" secondItem="HxH-tv-ROa" secondAttribute="bottom" id="4W6-NJ-HH6"/>
+                            <constraint firstItem="muO-eC-bX3" firstAttribute="leading" secondItem="HxH-tv-ROa" secondAttribute="leading" id="6Sr-qA-7DH"/>
+                            <constraint firstItem="HxH-tv-ROa" firstAttribute="top" secondItem="H8G-Lb-NEL" secondAttribute="bottom" id="8jw-1e-K2U"/>
+                            <constraint firstItem="HxH-tv-ROa" firstAttribute="leading" secondItem="hOr-J2-Bdl" secondAttribute="leading" id="C3w-Z1-C3h"/>
+                            <constraint firstItem="muO-eC-bX3" firstAttribute="top" secondItem="HxH-tv-ROa" secondAttribute="bottom" id="ZaG-Cc-FYp"/>
+                            <constraint firstItem="muO-eC-bX3" firstAttribute="trailing" secondItem="HxH-tv-ROa" secondAttribute="trailing" id="dTa-5o-4y8"/>
+                            <constraint firstAttribute="trailing" secondItem="HxH-tv-ROa" secondAttribute="trailing" id="jSN-xl-A9C"/>
+                            <constraint firstAttribute="trailing" secondItem="muO-eC-bX3" secondAttribute="trailing" id="pyB-iL-oAI"/>
+                            <constraint firstItem="muO-eC-bX3" firstAttribute="leading" secondItem="hOr-J2-Bdl" secondAttribute="leading" id="uwj-Dp-Qgt"/>
+                            <constraint firstItem="Twl-Y7-7ow" firstAttribute="top" secondItem="muO-eC-bX3" secondAttribute="bottom" id="y8n-eu-QHU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8s6-nP-N6N"/>
+                    <connections>
+                        <outlet property="collectionView" destination="HxH-tv-ROa" id="p7t-Sk-pId"/>
+                        <outlet property="toolBar" destination="muO-eC-bX3" id="pZ6-8M-utm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeB-Wd-ZQ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
