@@ -18,7 +18,6 @@
 		48F4015D1B6A2F4500629110 /* fruits.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48F4015C1B6A2F4500629110 /* fruits.plist */; };
 		48F401601B6A3D9700629110 /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4015F1B6A3D9700629110 /* FruitCell.swift */; };
 		48F401621B6A57BB00629110 /* FruitsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F401611B6A57BB00629110 /* FruitsHeaderView.swift */; };
-		48F401641B6A688D00629110 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F401631B6A688D00629110 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +46,6 @@
 		48F4015C1B6A2F4500629110 /* fruits.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fruits.plist; sourceTree = "<group>"; };
 		48F4015F1B6A3D9700629110 /* FruitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
 		48F401611B6A57BB00629110 /* FruitsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsHeaderView.swift; sourceTree = "<group>"; };
-		48F401631B6A688D00629110 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				48F1999A1B690CC000614BB9 /* ViewController.swift */,
-				48F401631B6A688D00629110 /* DetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -287,7 +284,6 @@
 				48F1999B1B690CC000614BB9 /* ViewController.swift in Sources */,
 				48F401621B6A57BB00629110 /* FruitsHeaderView.swift in Sources */,
 				48F199991B690CC000614BB9 /* AppDelegate.swift in Sources */,
-				48F401641B6A688D00629110 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

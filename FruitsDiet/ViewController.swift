@@ -42,21 +42,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    // MARK:- prepareForSegue
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        // retrieve selected cell & fruit
-        
-        if let indexPath = getIndexPathForSelectedCell() {
-            
-            let fruit = dataSource.fruitsInGroup(indexPath.section)[indexPath.row]
-            
-            let detailViewController = segue.destinationViewController as! DetailViewController
-            detailViewController.fruit = fruit
-        }
-    }
-    
     // MARK:- Should Perform Segue
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
@@ -82,7 +67,7 @@ class ViewController: UIViewController {
         let cell = collectionView.cellForItemAtIndexPath(indexPath)
         
         if flag {
-            cell?.contentView.backgroundColor = UIColor.magentaColor()
+            cell?.contentView.backgroundColor = UIColor.greenColor()
         } else {
             cell?.contentView.backgroundColor = nil
         }
